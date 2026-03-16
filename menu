@@ -1,1 +1,23 @@
+def menu():
+    while True:
+        print("  SISTEMA DE CONTROL DE GASTOS")
+        print("═" * 33)
+        print(" 1. Registrar gasto de vehículo")
+        print(" 2. Buscar gastos por placa     ")
+        print(" 3. Calcular total acumulado    ")
+        print(" 4. Salir                      ")
+        
 
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            registrar_gastos()
+        elif opcion == "2":
+            calcular_gastos()
+        elif opcion == "3":
+            total_gastos()
+        elif opcion == "4":
+            print("\nSaliendo del programa.")
+            break
+        else:
+            print("\nError: Opción no válida, intente de nuevo.")
