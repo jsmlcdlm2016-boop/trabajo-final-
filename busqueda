@@ -1,0 +1,11 @@
+#calcula el total gastado por todas las plcas registradas     
+def total_gastos():
+    suma=0
+    for gasto in gastos:
+            suma = suma + gasto["valor"]
+    print("---------------------")
+    print("Gastos totales: ")
+    print("$", int(suma))
+    print("---------------------")
+    input("\nPresione ENTER para continuar...")
+menu() 
