@@ -1,0 +1,17 @@
+#calcula el total de los gastos individasules por cada placa
+def registrar_gastos():
+    placa = input("Ingrese la placa del vehículo: ").upper()
+    concepto = input("Ingrese el concepto (Gasolina, Peaje): ").upper()
+    valor = int(input("Ingrese el valor del gasto: "))
+
+    gasto = {
+        "placa": placa,
+        "concepto": concepto,
+        "valor": valor
+    }
+
+    gastos.append(gasto)
+    
+    print(gastos)
+
+    print("Gasto registrado correctamente\n")
